@@ -4,23 +4,80 @@
     android:layout_height="fill_parent"
     android:orientation="vertical" >
 
-    <TextView
-        android:layout_width="fill_parent"
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/hello" />
+        android:orientation="vertical" >
 
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/textViewLatitude"
+            android:layout_below="@+id/textViewLatitude"
+            android:layout_marginRight="38dp" >
+
+            <TextView
+                android:id="@+id/textViewLatitude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="Latitude:"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/editTextLatitude"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:editable="false" >
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/textViewLatitude"
+            android:layout_below="@+id/textViewLatitude"
+            android:layout_marginRight="38dp" >
+
+            <TextView
+                android:id="@+id/textViewLongitude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="Longitude:"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/editTextLongitude"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:editable="false" >
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+    </LinearLayout>
+    <!--
     <RelativeLayout
         android:id="@+id/relativeLayout1"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent" >
-        
+    
         <com.google.android.maps.MapView
                  android:layout_width="fill_parent"
                  android:layout_height="fill_parent"
                  android:apiKey="05-2JeRwaJxAeZqgX-_b4qaUAWiHA5SA4Nj-qHQ"
                  />
-    </RelativeLayout>
 
-    
-            
+    </RelativeLayout>
+    -->
+
 </LinearLayout>
