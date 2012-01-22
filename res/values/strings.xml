@@ -3,5 +3,6 @@
 
     <string name="hello">Hello World, MovingMapActivity!</string>
     <string name="app_name">MovingMap</string>
+    <string name="ip_socket_port">5172</string>
 
 </resources>
